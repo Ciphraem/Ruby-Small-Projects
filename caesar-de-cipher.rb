@@ -15,7 +15,7 @@ def de_cipher (cipher, shift)
         og_message.push(letter.ord)
     end
 
-    p og_message
+    # p og_message
 
     og_message.map! do |letter|
       if letter == 32
