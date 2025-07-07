@@ -1,6 +1,6 @@
 # caesar-cipher.rb from The Odin Project
 
-# First, I need to take two inputs: the message (message) and the shift (shift) (the shift is always to the left)
+# First, I need to take two inputs: the message (message) and the shift (shift) (the shift is always to the right)
 # Second, the messages runs through a method (takes shift as argument) where each individual letter shifts depending on the argument
 #     Challenge: letters must wrap around from z back to a
 # Third, print out the new shifted message (cipher)
@@ -9,6 +9,7 @@
 
 def caesar_cipher (message, shift)
     cipher = Array.new
+    # rem_shift = Array.new
     message.each do |letter|
         cipher.push(letter.ord)
     end
@@ -20,7 +21,19 @@ def caesar_cipher (message, shift)
           letter = ''
           next
       end
-      letter = letter + shift
+
+      if letter >= 65 && letter <=90
+          letter = letter + shift
+          if letter > 90
+                letter = letter-90+64
+          end
+      elsif letter >= 97 && letter <= 122
+          letter = letter + shift
+          if letter > 122
+              letter = letter-122+96
+          end   
+      end
+
       letter.chr(Encoding::UTF_8)
     end
 
