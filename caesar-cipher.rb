@@ -5,14 +5,41 @@
 #     Challenge: letters must wrap around from z back to a
 # Third, print out the new shifted message (cipher)
 
+# encoding: utf-8
+
+def caesar_cipher (message, shift)
+    cipher = Array.new
+    message.each do |letter|
+        cipher.push(letter.ord)
+    end
+
+    # p cipher
+
+    cipher.map! do |letter|
+      if letter == 32
+          letter = ''
+          next
+      end
+      letter = letter + shift
+      letter.chr(Encoding::UTF_8)
+    end
+
+    # p cipher
+
+    cipher.map! {|letter| letter == nil ? " " : letter}
+    
+    cipher.join
+end
+
 puts "Message?"
 message = gets.chomp.split("")
+# message = "hello there"
+# message = message.split("")
 puts "Shift?"
-shift = gets.chomp
+shift = gets.chomp.to_i
+# shift = 5
 
-p message
-p shift
+# p message
+# p shift
 
-# def caesar_cipher (message, shift)
-#     mes
-# end
+p caesar_cipher(message, shift)
