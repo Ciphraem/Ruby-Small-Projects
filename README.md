@@ -1,4 +1,4 @@
-# Caesar-Cipher-Ruby
+# Caesar-Cipher in Ruby
 
 This is the first project for the Ruby Course on The Odin Project.
 
