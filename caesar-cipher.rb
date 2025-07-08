@@ -9,50 +9,31 @@
 
 def caesar_cipher (message, shift)
     cipher = Array.new
-    # rem_shift = Array.new
-    message.each do |letter|
-        cipher.push(letter.ord)
+    cipher = message.map do |letter|        # keep original message if needed
+
+        letter = letter.ord
+      
+        case letter
+        when 97..122
+            letter += shift
+            letter -= 26 if letter > 122
+            letter += 26 if letter < 97     # in case of negative shift
+        when 65..90
+            letter += shift
+            letter -= 26 if letter > 90
+            letter += 26 if letter < 65
+        end
+
+        letter.chr(Encoding::UTF_8)
     end
-
-    # p cipher
-
-    cipher.map! do |letter|
-      if letter == 32
-          letter = ''
-          next
-      end
-
-      if letter >= 65 && letter <=90
-          letter = letter + shift
-          if letter > 90
-                letter = letter-90+64
-          end
-      elsif letter >= 97 && letter <= 122
-          letter = letter + shift
-          if letter > 122
-              letter = letter-122+96
-          end   
-      end
-
-      letter.chr(Encoding::UTF_8)
-    end
-
-    # p cipher
-
-    cipher.map! {|letter| letter == nil ? " " : letter}
     
     cipher.join
 end
 
 puts "Message?"
 message = gets.chomp.split("")
-# message = "hello there"
-# message = message.split("")
+
 puts "Shift?"
 shift = gets.chomp.to_i
-# shift = 5
-
-# p message
-# p shift
 
 p caesar_cipher(message, shift)
