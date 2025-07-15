@@ -1,4 +1,5 @@
-# Caesar-Cipher in Ruby
+# Ruby-Small-Projects from The Odin Project
+## Caesar-Cipher in Ruby
 
 This is the first project for the Ruby Course on The Odin Project.
 
@@ -8,9 +9,9 @@ Implement a Caesar cipher that takes in a string and the shift factor and then o
   > caesar_cipher("What a string!", 5)  
   => "Bmfy f xywnsl!"
 
-## HOW TO USE
+### HOW TO USE
 
-### caesar-cipher.rb
+#### caesar-cipher.rb
 You'll be prompted with two inputs: the message you want to cipher and the cipher shift. The output is the ciphered message.
 
   > Message?  
@@ -19,7 +20,7 @@ You'll be prompted with two inputs: the message you want to cipher and the ciphe
   > ***5***  
   > "Bmfy f xywnsl!"  
 
-### caesasr-de-cipher.rb (personal extension)
+#### caesasr-de-cipher.rb (personal extension)
 You'll be prompted with two inputs: the ciphered message you had and the cipher shift (which you should know). The output is the original message.
 
   > What's the message?  
@@ -29,7 +30,7 @@ You'll be prompted with two inputs: the ciphered message you had and the cipher 
   > "What a string!"  
 
   
-# Sub-Strings
+## Sub-Strings
 
 This is the second project for the Ruby Course on The Odin Project.
 
