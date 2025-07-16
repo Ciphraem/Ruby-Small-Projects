@@ -49,7 +49,7 @@ Next, make sure your method can handle multiple words:
 
 ## Stock-Picker
 
-This is the second project for the Ruby Course on The Odin Project.
+This is the third project for the Ruby Course on The Odin Project.
 
 From the project page:
 
@@ -59,3 +59,12 @@ Implement a method #stock_picker that takes in an array of stock prices, one for
   => [1,4]  # for a profit of $15 - $3 == $12
 
 Quick Tips: (1) You need to buy before you can sell, and (2) pay attention to edge cases like when the lowest day is the last day or the highest day is the first day.
+
+
+## Bubble-Sort
+
+This is the fourth short ruby project for the Ruby Course on The Odin Project
+
+From the project page:
+
+Build a method #bubble_sort that takes an array and returns a sorted array. It must use the bubble sort methodology (using #sort would be pretty pointless, wouldn’t it?).
