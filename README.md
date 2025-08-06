@@ -67,4 +67,18 @@ This is the fourth short ruby project for the Ruby Course on The Odin Project
 
 From the project page:
 
-Build a method #bubble_sort that takes an array and returns a sorted array. It must use the bubble sort methodology (using #sort would be pretty pointless, wouldn’t it?).
+Build a method *#bubble_sort* that takes an array and returns a sorted array. It must use the bubble sort methodology (using *#sort* would be pretty pointless, wouldn’t it?).
+
+
+## Tic-Tac-Toe
+
+This is the fifth short ruby project for the Ruby Course on The Odin Project
+
+From the project page:
+
+*Build a tic-tac-toe game on the command line where two human players can play against each other and the board is displayed in between turns.*
+
+    1.Think about how you would set up the different elements within the game… What should be a class? Instance variable? Method? A few minutes of thought can save you from wasting an hour of coding.
+    2. Build your game, taking care to not share information between classes any more than you have to.
+    3. Post your solution below, then check out this example Tic Tac Toe solution from RosettaCode.org.
+
